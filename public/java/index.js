@@ -40,10 +40,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-
-
 function loadAboutImage(id, targetId) {
   var el = document.getElementById(id);
 
@@ -51,7 +47,7 @@ function loadAboutImage(id, targetId) {
 
   var imageToLoad;
 
-  if(el.dataset.image) {
+    if(el.dataset.image) {
     imageToLoad = el.dataset.image;
   }
 

@@ -142,13 +142,11 @@
 }
 
 
-/* .wallpaper
+.wallpaper
 {
   animation-duration: 2.2s;
   animation-name: zoomOut;
   animation-timing-function: ease-out;
-
-
 }
 
 .picture-shadow{
@@ -157,9 +155,9 @@
 
 .picture-image{
   animation-name: picImage;
-} */
+}
 
-.wallpaper
+/* .wallpaper
 {
   animation-timing-function: ease-out;
 }
@@ -184,7 +182,7 @@
 .picture-shadow,
 .picture-image {
   opacity: 0;
-}
+} */
 
 .menu-bar{
   
@@ -391,15 +389,15 @@
   animation-name: slideUp1;
 }
 
-/* .picture-shadow1{
+.picture-shadow1{
   animation-name: picShadow1;
 }
 
 .picture-image1{
   animation-name: picImage1;
-} */
+}
 
-.picture1.is-loaded1 .picture-shadow1 {
+/* .picture1.is-loaded1 .picture-shadow1 {
   animation-name: picShadow1;  
 }
 
@@ -411,7 +409,7 @@
 .picture-image1
 {
   opacity: 0;
-}
+} */
 
 
 
