@@ -9,7 +9,7 @@ app.use(express.static("public"));
 app.set('view engine', 'ejs');
 
 
-app.listen(3000, (req, res) => {
+app.listen(process.env.PORT || 3000, (req, res) => {
 
     console.log("app.js is tuned on 3000!");
 });
