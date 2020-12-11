@@ -1,0 +1,327 @@
+
+
+/* id tags  */
+#title {
+    position: absolute;
+    left: 50px;
+    top: 140px;
+    font-size: 2rem;
+}
+
+#digital{
+    padding: 10px;
+}
+
+#uplift{
+    padding: 10px;
+}
+
+/* class tags  */
+.work_summary{
+    width: 100%; 
+    height: 700px;  
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* text-align: center;  */
+    /* margin: 0 auto;  */
+    
+}
+
+
+
+.work_experience1{
+
+    max-width: 240px;      /* max- limits the space for th bottom part of the card */
+    max-height: 200px;  
+    margin: 2rem auto;
+    position: absolute;
+    left: 870px;
+    top: 100px;                
+}
+
+.work_experience2{
+    position: absolute;
+    right: 380px;
+    top: 230px;
+    max-width: 240px;         /* max- limits the space for th bottom part of the card */
+    max-height: 200px;     
+}
+
+.work_experience3{
+    position: absolute;
+    max-width: 240px;
+    max-height: 200px;
+    left: 290px;
+    top: 330px;
+}
+
+.work_experience4{
+    position: absolute;
+    max-width: 240px;
+    max-height: 200px;
+    left: 10px;
+    top: 440px;
+}
+
+
+
+.card
+{
+    height: 100px;
+    width: 300px;
+    /* background-color: #81ecec; */
+    position: relative;
+    display: flex;
+    border-radius: 25px;
+    /* left: 50%; */
+}
+
+.card h1{
+    color: #fff;
+    display: flex;
+    flex: 1;
+    font-size: 1.2rem;
+    margin: 10px 0 0 20px;
+}
+
+.card-top{
+    height: 60px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    /* background-color: #00cec9; */
+    display: flex;
+    border-radius: 25px 25px 0 0;
+}
+
+.card img{
+
+    border-radius: 50%;
+    border: 7px solid #fff;
+    height: 120px;
+    width: 120px;   
+    margin: 30px 20px 0 0;     
+}
+
+.card .date{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 900;
+    left: 190px;
+    top: 40px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.card-bottom{
+
+    position: absolute;
+    top: 70px;
+    left: 20px;      
+}
+
+.info{
+
+    /* margin-bottom: 2rem; */
+    color: #fff;
+}
+
+
+.work_content {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.work_side
+{
+    max-height: 18rem;
+    max-width: 18rem;
+}
+
+.work_about
+{
+    max-width: 26rem;   /* if we don't assign max with width then our section will cover the whole page */
+}
+
+@media screen and (max-width: 799px)
+{
+    #title{
+        position: relative;
+        left: 0;
+        top: -200px;
+        text-align: center;
+    }
+    .work_summary{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 100vh;
+        text-align: center;
+        position: relative;
+    }
+    
+    .work_experience1{
+        position: absolute;
+        left: 150px;
+        top: 200px;
+
+    }
+    .work_experience2{
+        position: absolute;
+        left: 150px;
+        top: 350px;
+    }
+    
+    .work_experience3{
+        position: absolute;
+        left: 150px;
+        top: 470px;
+    }
+
+    .work_experience4{
+        position: absolute;
+        left: 150px;
+        top: 590px;
+    }  
+
+
+    .work_content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 3rem;
+
+    }
+
+    .work_side{
+        margin-bottom: 3rem;
+        height: 18rem;
+        width: 18rem;
+
+    }
+    
+}
+
+@media screen and (min-width : 800px) {
+
+    .work_content
+    {
+        align-items: center;
+        justify-content: space-around;
+        justify-content: space-evenly;
+    }
+
+    .work_side{
+        flex-grow: 0;
+        flex-shrink: 0;
+        order: 2;
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .work_about
+    {
+        margin-top: 4rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+    
+    }
+
+}
+
+/* shared section  */
+.work_shadow,        /* unless this shared method is implemented, the image will not go up and will remain down */
+.work_image
+{
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.work_picture
+{
+    position: relative;
+    padding-top: 100%;
+    width: 100%;
+
+}
+
+.work_shadow
+{
+    border-radius: 290486px;
+    position: absolute;
+    background-image: radial-gradient(#000, 0%, rgba(0, 0, 0, 0) 70%);
+    top: 10%;
+}
+
+.work_image
+{
+    border-radius: 290486px;
+    position: absolute;
+}
+
+/* shared section  */
+.work_job, .work_contact {
+letter-spacing: 0.3rem;
+text-transform: uppercase;
+font-family: 'Montserrat', 'Quicksand', sans-serif;
+}
+
+.work_name{
+
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    
+    
+}
+.work_hr
+{
+    background-color: #ff470f;
+    content: "";
+    border: none;
+    height: 1px;
+    width: 4rem;
+    margin-bottom: 1.5rem;
+    transform-origin: center left;
+}
+
+.work_job{
+
+    color: #ffe479;
+    margin-bottom: 0.75rem;
+
+}
+
+.work_description
+{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

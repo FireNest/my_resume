@@ -1,0 +1,602 @@
+
+
+@keyframes bounceIn {
+  from
+  {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+.wallpaper,
+.menu-bar,
+.picture-shadow,
+.picture-image,
+.name,
+.job,
+.hr,
+.description,
+.contact,
+.social li
+{
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+  animation-fill-mode: both;
+}
+
+.contact {
+  animation-name: bounceIn;
+}
+
+/* we are gonna have 7 keyframe statements in total */
+/* zoomOut for the wallpaper  */
+/* picImage for picture image  */
+/* picShadow for the picture shadow  */
+/* slideDown for the name  */
+/* slideUp for all other text elements  */
+/* fillUp for the hr line  */
+/* bounceIn for the contact button  */
+
+
+@keyframes fillUp {
+  from
+  {
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+@keyframes picImage {
+    from
+    {
+      opacity: 0.5;
+      transform: scale(1.2) translateY(-1rem);
+    }
+
+    to{
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes picShadow {
+  from{
+    opacity: 0;
+    transform: scale(1.2) translateY(4rem);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+}
+
+@keyframes slideDown {
+  from{
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes slideUp {
+  from
+  {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+    to
+    {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+}
+
+
+@keyframes zoomOut {
+  from
+  {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  to{
+    opacity: 0.2;
+    transform: scale(1);
+  }
+
+}
+
+@keyframes navbar {
+  from {
+    opacity: 0;
+    transform: scale(1.25) translateY(-1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.picture-image,
+.picture-shadow
+{
+  animation-duration: 750ms;
+  animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
+}
+
+
+/* .wallpaper
+{
+  animation-duration: 2.2s;
+  animation-name: zoomOut;
+  animation-timing-function: ease-out;
+
+
+}
+
+.picture-shadow{
+  animation-name: picShadow;
+}
+
+.picture-image{
+  animation-name: picImage;
+} */
+
+.wallpaper
+{
+  animation-timing-function: ease-out;
+}
+
+.wallpaper.is-loaded
+{
+  animation-delay: 1s;
+  animation-name: zoomOut;
+}
+
+.picture.is-loaded .picture-shadow
+{
+  animation-name: picShadow;
+}
+
+.picture.is-loaded .picture-image
+{
+  animation-name: picImage;
+}
+
+.wallpaper,
+.picture-shadow,
+.picture-image {
+  opacity: 0;
+}
+
+.menu-bar{
+  
+    animation-name: navbar;
+    animation-timing-function: ease-out;
+}
+
+.name
+{
+  animation-name: slideDown;
+}
+
+.job
+{
+  animation-name: slideUp;
+}
+
+.hr
+{
+  animation-name: fillUp;
+}
+
+.description {
+  animation-name: slideUp;
+}
+
+.social li{
+  animation-duration: 500ms;
+  animation-name: slideUp;
+  animation-timing-function: cubic-cubic-bezier(0, 0.5, 0, 1);
+}
+
+.name
+{
+  animation-delay: 100ms;
+}
+
+.job
+{
+  animation-delay: 200ms;
+}
+
+.hr
+{
+  animation-delay: 300ms;
+}
+
+.description
+{
+  animation-delay: 400ms;
+
+}
+
+.picture-image{
+  animation-delay: 500ms;
+}
+
+.picture-shadow
+{
+  animation-delay: 500ms;
+}
+
+.contact
+{
+  animation-delay: 600ms;
+}
+
+.social li:nth-child(1)
+{
+  animation-delay: 800ms;
+}
+
+.social li:nth-child(2)
+{
+  animation-delay: 900ms;
+}
+
+.social li:nth-child(3)
+{
+  animation-delay: 1s;
+}
+
+.menu-bar{
+
+  animation-delay: 1s;
+}
+
+                                                          /* animation of about page   */
+/* we are gonna have 7 keyframe statements in total */
+/* zoomOut for the wallpaper  */
+/* picImage for picture image  */
+/* picShadow for the picture shadow  */
+/* slideDown for the name  */
+/* slideUp for all other text elements  */
+/* fillUp for the hr line  */
+/* bounceIn for the contact button  */
+
+
+
+
+@keyframes  slideDown1{
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  } 
+  
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp1{
+  from {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  to 
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fillUp1{
+  from {    
+    transform: scale(0);
+  }
+
+
+  to{    
+    transform: scale(1);
+  }
+}
+
+@keyframes picShadow1 {
+  from 
+  {
+    opacity: 0;
+    transform: scale(1.25) translateY(4rem);
+
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.1) translateY(0);
+  }
+}
+
+@keyframes picImage1{
+  from 
+  {
+    opacity: 0;
+    transform: scale(1.25) translateY(-4rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+}
+
+
+
+
+.name1,
+.job1,
+.hr1,
+.description1,
+.picture-shadow1,
+.picture-image1
+{
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+  animation-fill-mode: both;
+}
+
+.picture-image1,
+.picture-shadow1{
+  animation-duration: 750ms;
+  animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
+}
+
+
+
+.name1
+{
+  animation-name: slideDown1;
+
+}
+
+.job1{
+
+  animation-name: slideUp1;
+}
+
+.hr1
+{
+  animation-name: fillUp1;
+}
+.description1{
+
+  animation-name: slideUp1;
+}
+
+/* .picture-shadow1{
+  animation-name: picShadow1;
+}
+
+.picture-image1{
+  animation-name: picImage1;
+} */
+
+.picture1.is-loaded1 .picture-shadow1 {
+  animation-name: picShadow1;  
+}
+
+.picture1.is-loaded1 .picture-image1 {
+  animation-name: picImage1;
+}
+
+.picture-shadow1,
+.picture-image1
+{
+  opacity: 0;
+}
+
+
+
+
+.name1{
+  animation-delay: 100ms;
+}
+.job1{
+  animation-delay: 200ms;
+}
+
+.hr1{
+  animation-delay: 300ms;
+}
+
+.description1{
+  animation-delay: 400ms;
+}
+
+.picture-shadow1{
+  animation-delay: 500ms;
+}
+
+.picture-image1{
+  animation-delay: 500ms;
+}
+
+/* /////////////////////////////////// animation of work page  */
+
+
+
+@keyframes work_bounceIn {
+  from  {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+.work_experience1,
+.work_experience2,
+.work_experience3,
+.work_experience4,
+.work_description,
+.work_shadow,
+.work_image
+{
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+  animation-fill-mode: both;
+}
+
+.work_shadow,
+.work_image{
+  animation-duration: 750ms;
+  animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
+
+}
+
+
+@keyframes work_slideUp
+{
+  from {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes work_hr
+{
+  from  {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes work_shadow{
+  from {
+    opacity: 0;
+    transform: scale(1.25) translateY(4rem);
+
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.1) translateY(0);
+  }
+}
+
+@keyframes work_image{
+  from {
+    opacity: 0;
+    transform: scale(1.25) translateY(-4rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+
+
+.work_experience1{
+
+  animation-name: work_slideUp;
+}
+
+.work_experience2{
+  animation-name: work_slideUp;
+}
+
+
+
+.work_experience3{
+  animation-name: work_slideUp;
+}
+
+.work_experience4{
+  animation-name: work_slideUp;
+}
+/* 
+.work_picture.is-loaded2 .work_shadow {
+  animation-name: work_shadow;
+}
+
+.work_picture.is-loaded2 .work_image {
+  animation-name: work_image;
+} */
+
+
+/* .work_shadow,
+.work_image{
+  opacity: 0;
+} */
+
+
+.work_experience1{
+  animation-delay: 100ms;
+}
+
+.work_experience2{
+  animation-delay: 200ms;
+}
+
+.work_experience3{
+  animation-delay: 300ms;
+}
+
+.work_experience4 {
+  animation-delay: 500ms;
+}
+
+.work_picture{
+  animation-delay: 500ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
