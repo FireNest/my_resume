@@ -26,19 +26,19 @@
     /* align-items: center; */
     /* text-align: center;  */
     /* margin: 0 auto;  */
-    
+    position: relative;    
 }
 
 
 
 .work_experience1{
-
-    max-width: 240px;      /* max- limits the space for th bottom part of the card */
-    max-height: 200px;  
-    margin: 2rem auto;
     position: absolute;
-    left: 870px;
-    top: 100px;                
+    right: 100px;
+    top: 120px; 
+    max-width: 240px;      /* max-limits the space for th bottom part of the card */
+    max-height: 200px;  
+    /* margin: 2rem auto; */
+                   
 }
 
 .work_experience2{
@@ -148,18 +148,18 @@
     max-width: 26rem;   /* if we don't assign max with width then our section will cover the whole page */
 }
 
-@media screen and (max-width: 799px)
+@media screen and (max-width: 992px)
 {
     #title{
         position: relative;
-        left: 0;
-        top: -200px;
+        left: -10px;
+        top: 140px;
         text-align: center;
     }
     .work_summary{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
         width: 100%;
         min-height: 100vh;
         text-align: center;
@@ -168,25 +168,25 @@
     
     .work_experience1{
         position: absolute;
-        left: 150px;
-        top: 200px;
+        left: 320px;
+        top: 230px;
 
     }
     .work_experience2{
         position: absolute;
-        left: 150px;
+        left: 320px;
         top: 350px;
     }
     
     .work_experience3{
         position: absolute;
-        left: 150px;
+        left: 320px;
         top: 470px;
     }
 
     .work_experience4{
         position: absolute;
-        left: 150px;
+        left: 320px;
         top: 590px;
     }  
 
@@ -208,7 +208,7 @@
     
 }
 
-@media screen and (min-width : 800px) {
+ @media screen and (min-width : 993px) {
 
     .work_content
     {
@@ -233,7 +233,45 @@
     
     }
 
-}
+} 
+
+
+/* @media screen and (min-width: 992px)
+{
+
+    .work_summary {
+        display: block;
+        position: relative;
+        
+
+    }
+
+    .work_experience1 {
+        flex-grow: 0;
+        flex-shrink: 0;
+
+    }
+    .work_content {
+        align-items: center;
+        justify-content: space-around;
+        justify-content:space-evenly;
+    }
+
+    .work_side {
+        flex-grow: 0;
+        flex-shrink: 0;
+        order: 2;
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .work_about {
+        flex-grow: 1;
+        flex-shrink: 1;
+
+    }
+} */
+
 
 /* shared section  */
 .work_shadow,        /* unless this shared method is implemented, the image will not go up and will remain down */
